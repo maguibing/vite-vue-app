@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ msg }}
+    Home
   </div>
 </template>
 
@@ -8,10 +8,9 @@
 import { reactive, toRefs } from 'vue'
 
 export default {
-
   setup() {
     const state = reactive({
-      msg: 'Hello World !',
+      count: 0,
     })
 
     return {
@@ -21,4 +20,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

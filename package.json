@@ -10,7 +10,10 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "vue": "^3.4.29"
+    "axios": "^1.7.4",
+    "pinia": "^2.2.2",
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.26.0",
