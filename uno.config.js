@@ -3,8 +3,11 @@ import { defineConfig, presetAttributify, presetUno } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetAttributify(),
     presetUno(),
+    presetAttributify(),
     presetRemToPx({ baseFontSize: 4 }),
+  ],
+  shortcuts: [
+    ['wh-full', 'bg-white h-full'],
   ],
 })
