@@ -1,24 +1,19 @@
 <template>
-  <div>
-    <n-button @click="showModal = !showModal">
-      open
-    </n-button>
-    <n-modal v-model:show="showModal">
-      <n-card style="width: 600px" title="模态框" :bordered="false" size="huge" role="dialog" aria-modal="true">
-        <template #header-extra>
-          噢！
-        </template>
-        内容
-        <template #footer>
-          尾部
-        </template>
-      </n-card>
-    </n-modal>
+  <div class="main" :class="classAttribute">
+    Hello world !
+
+    <button @click="handleRes">
+      操作
+    </button>
   </div>
 </template>
 
 <script setup>
-const showModal = ref(false)
+import { watchEffect } from 'vue'
+
+const classAttribute = {
+  lazy: true,
+}
 </script>
 
 <style lang="scss" scoped></style>

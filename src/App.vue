@@ -1,11 +1,14 @@
 <script setup>
 import { dateZhCN, zhCN } from 'naive-ui'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <n-config-provider class="wh-full" :locale="zhCN" :date-locale="dateZhCN">
-    <RouterView v-slot="{ Component }">
+    <RouterView />
+
+    <!-- <RouterView v-slot="{ Component }">
       <component :is="Component" />
-    </RouterView>
+    </RouterView> -->
   </n-config-provider>
 </template>

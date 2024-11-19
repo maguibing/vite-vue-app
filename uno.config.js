@@ -8,6 +8,6 @@ export default defineConfig({
     presetRemToPx({ baseFontSize: 4 }),
   ],
   shortcuts: [
-    ['wh-full', 'bg-white h-full'],
+    ['wh-full', 'w-full h-full'],
   ],
 })
