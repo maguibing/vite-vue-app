@@ -17,5 +17,4 @@ export const createSessionStorage = function (option = {}) {
 }
 
 export const lStorage = createLocalStorage({ prefixKey })
-
 export const sStorage = createSessionStorage({ prefixKey })

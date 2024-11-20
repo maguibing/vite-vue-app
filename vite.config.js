@@ -13,8 +13,8 @@ export default defineConfig({
     Unocss(),
     AutoImport({
       imports: [
-        'vue',
-        'vue-router',
+        // 'vue',
+        // 'vue-router',
       ],
       dts: false,
     }),
