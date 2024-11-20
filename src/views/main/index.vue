@@ -1,7 +1,5 @@
 <template>
-  <div class="main" :class="classAttribute">
-    Hello world!
-  </div>
+  <div class="main grid grid-cols-3 grid-rows-3 gap-20" />
 </template>
 
 <script setup>
