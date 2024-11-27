@@ -1,11 +1,16 @@
 <template>
-  <div class="main grid grid-cols-3 grid-rows-3 gap-20">
-    <HelloWorld />
+  <div class="main">
+    <Pedometer v-model="count" />
+
+    {{ count }}
   </div>
 </template>
 
 <script setup>
-import HelloWorld from '@/components/HelloWorld.vue'
+import { ref } from 'vue'
+import Pedometer from '@/components/Pedometer.vue'
+
+const count = ref(1)
 </script>
 
 <style lang="scss" scoped></style>

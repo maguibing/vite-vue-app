@@ -24,6 +24,13 @@ export default defineConfig({
       dts: false,
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler', // 单纯为了控制台不报错 scss
+      },
+    },
+  },
   server: {
     host: '0.0.0.0',
   },
