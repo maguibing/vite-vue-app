@@ -1,16 +1,11 @@
 <template>
   <div class="main">
-    <Pedometer v-model="count" />
-
-    {{ count }}
+    <Upload ref="uploadRef" />
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Pedometer from '@/components/Pedometer.vue'
-
-const count = ref(1)
+import Upload from '@/components/Upload.vue'
 </script>
 
 <style lang="scss" scoped></style>

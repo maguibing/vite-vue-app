@@ -6,7 +6,7 @@ import Unocss from 'unocss/vite'
 
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+import { ElementPlusResolver, NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   plugins: [
@@ -18,9 +18,10 @@ export default defineConfig({
         // 'vue-router',
       ],
       dts: false,
+      resolvers: [ElementPlusResolver()],
     }),
     Components({
-      resolvers: [NaiveUiResolver()],
+      resolvers: [NaiveUiResolver(), ElementPlusResolver()],
       dts: false,
     }),
   ],
